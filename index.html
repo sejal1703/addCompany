@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Company List</title>
+    <link rel="stylesheet" href="style.css">
+    
+	
+</head>
+<body>
+	<h1>Company List</h1>
+	<form>
+		<label for="company">Company Name:</label>
+		<input type="text" id="company" name="company"><br><br>
+		<label for="deadline">Deadline:</label>
+		<input type="date" id="deadline" name="deadline"><br><br>
+		<fieldset>
+			<legend>Eligibility Criteria</legend>
+			<label for="cgpa">CGPA:</label>
+			<input type="text" id="cgpa" name="cgpa"><br><br>
+			<label for="tenthPercentage">10th Percentage:</label>
+			<input type="text" id="tenthPercentage" name="tenthPercentage"><br><br>
+			<label for="twelfthPercentage">12th Percentage:</label>
+			<input type="text" id="twelfthPercentage" name="twelfthPercentage"><br><br>
+		</fieldset>
+		<button type="button" onclick="addCompany()">Add Company</button>
+	</form>
+	<br>
+	<table id="companyTable">
+		<tr>
+			<th>Company Name</th>
+			<th>Deadline</th>
+			<th>CGPA</th>
+			<th>10th Percentage</th>
+			<th>12th Percentage</th>
+			<th>Apply Here</th>
+		</tr>
+	</table>
+
+    <script src="script.js"></script>
+	
+</body>
+</html>
